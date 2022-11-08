@@ -1,19 +1,14 @@
 pipeline {
     agent any 
     stages {
-        stage('clean') { 
-            steps {
-          sh "clean"
-            }
-        }
-        stage('test') { 
-            steps {
-            sh "test"
-            }
-        }
         stage('compile') { 
             steps {
-            sh "compile" 
+            sh "compile"
+            }
+        }
+        stage('Test') { 
+            steps {
+            sh "Test" 
             }
         }
     }
